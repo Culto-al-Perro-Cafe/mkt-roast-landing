@@ -2,9 +2,18 @@ import React from 'react';
 import Button from './ui/Button';
 import { MessageCircle } from 'lucide-react';
 import { contactConfig } from '../config/contact';
+import posthog from 'posthog-js';
 
 const Hero: React.FC = () => {
   const whatsappUrl = `https://api.whatsapp.com/send/?phone=${contactConfig.whatsapp.number}&text=${encodeURIComponent(contactConfig.whatsapp.message)}`;
+
+  const handleWhatsAppClick = () => {
+    posthog.capture('hero_whatsapp_click');
+  };
+
+  const handleFormClick = () => {
+    posthog.capture('hero_form_click');
+  };
 
   return (
     <section 
@@ -38,6 +47,7 @@ const Hero: React.FC = () => {
               href={whatsappUrl}
               color="primary"
               className="group"
+              onClick={handleWhatsAppClick}
             >
               <MessageCircle className="w-5 h-5 mr-2 group-hover:animate-pulse" />
               Contáctanos por WhatsApp
@@ -46,6 +56,7 @@ const Hero: React.FC = () => {
               href="https://tally.so/r/3NyW0W" 
               color="secondary"
               className="group"
+              onClick={handleFormClick}
             >
               Llenar formulario
             </Button>
