@@ -1,8 +1,11 @@
 import React from 'react';
 import { Coffee, Mail, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 import Button from './ui/Button';
+import { contactConfig } from '../config/contact';
 
 const Footer: React.FC = () => {
+  const whatsappUrl = `https://wa.me/${contactConfig.whatsapp.number}?text=${encodeURIComponent(contactConfig.whatsapp.message)}`;
+
   return (
     <footer id="contact" className="bg-stone-900 text-stone-300">
       <div className="container mx-auto px-4 md:px-6 py-16">
@@ -13,9 +16,9 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-bold text-white">Perro Café</span>
             </div>
             <p className="text-stone-400">
-              Transformamos café excepcional en marcas inolvidables que conectan con los clientes y obtienen precios premium.
+              Somos tostadores, conocemos el producto y sabemos cómo ayudarte a construir una marca auténtica que conecte y crezca.
             </p>
-            <div className="flex space-x-4 pt-4">
+            {/* <div className="flex space-x-4 pt-4">
               <a href="#" className="text-stone-400 hover:text-amber-500 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
@@ -25,19 +28,25 @@ const Footer: React.FC = () => {
               <a href="#" className="text-stone-400 hover:text-amber-500 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
           
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
-              {['Inicio', 'Servicios', 'Sobre el Café', 'Testimonios', 'FAQ'].map((item) => (
-                <li key={item}>
+              {[
+                { text: 'Inicio', id: 'home' },
+                { text: 'Servicios', id: 'services' },
+                { text: 'Sobre el Café', id: 'about-coffee' },
+                { text: 'Testimonios', id: 'testimonials' },
+                { text: 'FAQ', id: 'faq' }
+              ].map((item) => (
+                <li key={item.text}>
                   <a 
-                    href={`#${item.toLowerCase().replace(' ', '-')}`}
+                    href={`#${item.id}`}
                     className="text-stone-400 hover:text-amber-500 transition-colors"
                   >
-                    {item}
+                    {item.text}
                   </a>
                 </li>
               ))}
@@ -70,16 +79,16 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Contáctanos</h3>
             <div className="space-y-4">
               <a 
-                href="mailto:hello@perrocafe.com" 
+                href={`mailto:${contactConfig.email}`}
                 className="flex items-center space-x-3 text-stone-400 hover:text-amber-500 transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>hello@perrocafe.com</span>
+                <span>{contactConfig.email}</span>
               </a>
               
               <div className="pt-4">
                 <Button 
-                  href="https://wa.me/123456789?text=Me%20interesa%20el%20branding%20de%20café" 
+                  href={whatsappUrl}
                   color="primary"
                   className="w-full flex items-center justify-center"
                 >
@@ -96,10 +105,10 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} Perro Café. Todos los derechos reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm text-stone-500 hover:text-amber-500 transition-colors">
+            <a href="/privacidad" className="text-sm text-stone-500 hover:text-amber-500 transition-colors">
               Política de Privacidad
             </a>
-            <a href="#" className="text-sm text-stone-500 hover:text-amber-500 transition-colors">
+            <a href="/terminos" className="text-sm text-stone-500 hover:text-amber-500 transition-colors">
               Términos de Servicio
             </a>
           </div>

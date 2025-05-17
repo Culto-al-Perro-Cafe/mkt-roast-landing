@@ -1,8 +1,11 @@
 import React from 'react';
 import Button from './ui/Button';
 import { MessageCircle } from 'lucide-react';
+import { contactConfig } from '../config/contact';
 
 const Hero: React.FC = () => {
+  const whatsappUrl = `https://wa.me/${contactConfig.whatsapp.number}?text=${encodeURIComponent(contactConfig.whatsapp.message)}`;
+
   return (
     <section 
       id="home"
@@ -32,7 +35,7 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
             <Button 
-              href="https://wa.me/123456789?text=Me%20interesa%20el%20branding%20de%20café" 
+              href={whatsappUrl}
               color="primary"
               className="group"
             >
