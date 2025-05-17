@@ -43,11 +43,11 @@ const Hero: React.FC = () => {
               Contáctanos por WhatsApp
             </Button>
             <Button 
-              href="#services" 
+              href="https://tally.so/r/3NyW0W" 
               color="secondary"
               className="group"
             >
-              Explora Nuestros Servicios
+              Llenar formulario
             </Button>
           </div>
         </div>
