@@ -1,9 +1,9 @@
 export const brandConfig = {
   name: 'Culto Roasters',
   social: {
-    instagram: 'cultoroaster',
-    facebook: 'cultoroaster',
-    twitter: 'cultoroaster',
+    instagram: 'cultoroasters',
+    facebook: 'cultoroasters',
+    twitter: 'cultoroasters',
   },
   contact: {
     email: 'info@perro.cafe',
