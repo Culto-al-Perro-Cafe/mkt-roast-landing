@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Coffee, Menu, X } from 'lucide-react';
+import { brandConfig } from '../config/brand';
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -31,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         <a href="#" className="flex items-center space-x-2">
           <Coffee className={`h-8 w-8 ${isScrolled ? 'text-amber-700' : 'text-white'}`} />
           <span className={`text-xl font-bold ${isScrolled ? 'text-amber-700' : 'text-white'}`}>
-            Perro Café
+            {brandConfig.name}
           </span>
         </a>
         

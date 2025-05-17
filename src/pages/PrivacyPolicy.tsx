@@ -1,6 +1,7 @@
 import React from 'react';
 import { Coffee } from 'lucide-react';
 import { contactConfig } from '../config/contact';
+import { brandConfig } from '../config/brand';
 
 const PrivacyPolicy: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const PrivacyPolicy: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6">
           <a href="/" className="flex items-center space-x-2">
             <Coffee className="h-8 w-8 text-amber-500" />
-            <span className="text-xl font-bold">Perro Café</span>
+            <span className="text-xl font-bold">{brandConfig.name}</span>
           </a>
         </div>
       </header>
@@ -22,7 +23,7 @@ const PrivacyPolicy: React.FC = () => {
           
           <div className="prose prose-stone max-w-none">
             <p className="text-lg text-stone-600 mb-8">
-              Última actualización: {new Date().toLocaleDateString()}
+              Última actualización: 2 de Noviembre de 2020
             </p>
 
             <section className="mb-8">
@@ -84,7 +85,7 @@ const PrivacyPolicy: React.FC = () => {
                 puede contactarnos a través de:
               </p>
               <ul className="list-disc pl-6 text-stone-600 space-y-2 mt-4">
-                <li>Correo electrónico: {contactConfig.email}</li>
+                <li>Correo electrónico: {brandConfig.contact.email}</li>
                 <li>WhatsApp: {contactConfig.whatsapp.number}</li>
               </ul>
             </section>
@@ -96,7 +97,7 @@ const PrivacyPolicy: React.FC = () => {
       <footer className="bg-stone-900 text-stone-300 py-8">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Perro Café. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} {brandConfig.name}. Todos los derechos reservados.
           </p>
         </div>
       </footer>
