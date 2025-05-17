@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             Convierte Tu Café en una <span className="text-amber-400">Marca Memorable</span>
           </h1>
           <p className="text-lg md:text-xl text-stone-200 mb-8 max-w-xl mx-auto md:mx-0">
-            Ayudamos a productores de café a mostrar su calidad única e historia a través de una marca excepcional.
+            Nosotros tostamos el café. Tú cuentas una historia que tus clientes recordarán cada vez que abran la bolsa.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
             <Button 
