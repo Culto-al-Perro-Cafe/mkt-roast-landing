@@ -10,6 +10,15 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
+  const navItems = [
+    { label: 'Inicio', href: '#home' },
+    { label: 'Servicios', href: '#services' },
+    { label: 'Sobre el Café', href: '#about-coffee' },
+    { label: 'Testimonios', href: '#testimonials' },
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Contacto', href: '#contact' }
+  ];
+  
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -28,15 +37,15 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          {['Home', 'Services', 'About Coffee', 'Testimonials', 'FAQ', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <a 
-              key={item}
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
+              key={item.label}
+              href={item.href}
               className={`font-medium hover:text-amber-500 transition-colors ${
                 isScrolled ? 'text-stone-700' : 'text-white'
               }`}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
@@ -62,14 +71,14 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         } overflow-hidden`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          {['Home', 'Services', 'About Coffee', 'Testimonials', 'FAQ', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <a 
-              key={item}
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
+              key={item.label}
+              href={item.href}
               className="text-stone-700 font-medium hover:text-amber-500 py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>

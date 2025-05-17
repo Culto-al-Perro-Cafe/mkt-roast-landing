@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           aria-hidden="true"
         ></div>
         <img
-          src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="https://images.pexels.com/photos/4765838/pexels-photo-4765838.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Máquina tostadora de café"
           className="w-full h-full object-cover"
         />
