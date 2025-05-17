@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 import { contactConfig } from '../config/contact';
 
 const Hero: React.FC = () => {
-  const whatsappUrl = `https://wa.me/${contactConfig.whatsapp.number}?text=${encodeURIComponent(contactConfig.whatsapp.message)}`;
+  const whatsappUrl = `https://api.whatsapp.com/send/?phone=${contactConfig.whatsapp.number}&text=${encodeURIComponent(contactConfig.whatsapp.message)}`;
 
   return (
     <section 

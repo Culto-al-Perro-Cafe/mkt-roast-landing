@@ -37,24 +37,24 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "¿Por qué debería invertir en branding para mi negocio de café?",
-      answer: "El branding de café te ayuda a diferenciar tu producto en un mercado competitivo, establecer precios premium, construir lealtad de clientes y crear una experiencia memorable que va más allá del sabor. Transforma un producto básico en uno con resonancia emocional."
+      question: "¿Qué incluye el servicio de crear mi propia marca de café?",
+      answer: "Nosotros tostamos el café y lo empacamos con tu propia marca. Tú eliges el origen, el tipo de tostado, el empaque, y decides si traes tu propio diseño o si quieres que creemos uno contigo (con costo adicional). Al final, tienes un producto listo para vender."
     },
     {
-      question: "¿Qué hace especial al café mexicano?",
-      answer: "El café mexicano es conocido por su perfil de sabor suave con notas achocolatadas, acidez ligera y cuerpo sedoso. A menudo se cultiva bajo sombra en altas altitudes, lo que contribuye a su sabor complejo. México es también uno de los mayores productores mundiales de café orgánico, con variaciones regionales distintivas."
+      question: "¿Puedo usar mi propio diseño o branding?",
+      answer: "Sí. Si ya tienes nombre, logo o empaque diseñado, trabajamos con eso. Solo necesitamos tus archivos. También podemos encargarnos del diseño y desarrollo de marca si lo prefieres, por un costo adicional."
     },
     {
-      question: "¿Cuánto tiempo típicamente toma el proceso de branding?",
-      answer: "Un paquete completo de branding de café típicamente toma de 6 a 8 semanas para completarse, incluyendo investigación, desarrollo de estrategia, creación de identidad visual, diseño de empaque y guías de marca. Podemos trabajar en tiempos acelerados cuando sea necesario."
+      question: "¿Ustedes venden el café o tengo que llevar el mío?",
+      answer: "Nosotros tostamos el café que seleccionamos directamente de fincas con las que ya trabajamos, porque creemos en lo que hacen y confiamos en su calidad. Principalmente usamos cafés de Chiapas y Veracruz. No trabajamos con café verde."
     },
     {
-      question: "¿Trabajan con productores de café de todos los tamaños?",
-      answer: "Sí, trabajamos con negocios de café de todos los tamaños—desde pequeñas granjas familiares hasta grandes cooperativas. Adaptamos nuestros servicios de branding para que coincidan con tus necesidades específicas y presupuesto, manteniendo la calidad premium."
+      question: "¿Cuál es la cantidad mínima para empezar?",
+      answer: "Podemos arrancar desde 10 kg por batch, lo que te permite probar tu marca sin grandes compromisos. A partir de ahí, puedes escalar según lo que necesites."
     },
     {
-      question: "¿Cuánto cuesta típicamente el branding de café?",
-      answer: "El branding de café es una inversión que va desde $5,000 para paquetes iniciales hasta $25,000+ para desarrollo de marca completo. Ofrecemos opciones flexibles y podemos crear un paquete personalizado basado en tus necesidades y presupuesto."
+      question: "¿Cuánto cuesta tener mi propia marca de café?",
+      answer: "Depende del volumen, el empaque y si ya tienes diseño. Un paquete básico comienza desde $4,500 MXN, e incluye café tostado, empaque y tu marca. Si necesitas branding desde cero, cotizamos por separado."
     }
   ];
 
@@ -67,7 +67,7 @@ const FAQ: React.FC = () => {
           </h2>
           <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
           <p className="text-lg text-stone-600">
-            Todo lo que necesitas saber sobre el branding de café y nuestros servicios
+            Todo lo que necesitas saber para lanzar tu propia marca de café (y cómo te ayudamos a lograrlo)
           </p>
         </div>
 
