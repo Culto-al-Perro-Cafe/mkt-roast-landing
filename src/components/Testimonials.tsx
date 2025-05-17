@@ -4,21 +4,21 @@ import { Star } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      text: "CaféBrand transformó el café de nuestra granja familiar en un producto premium que ahora se vende en tiendas especializadas a nivel nacional. Su estrategia de marca capturó perfectamente nuestra herencia y calidad.",
-      author: "María Hernández",
-      role: "Propietaria, Café Altura",
+      text: "Gato Gordo siempre tuvo buena comida y clientela fiel, pero visualmente no se sentía como una marca. Con la ayuda de Perro Café, transformamos nuestra identidad: desde los menús y señalética hasta cómo nos comunicamos en redes. Ahora la gente no solo viene a comer, viene porque se siente parte de algo especial. La diferencia es brutal: pasamos de ser 'una fondita buena' a ser un lugar con carácter, con historia y con estilo propio.",
+      author: "Vicente Castro",
+      role: "Dueño, Gato Gordo Comida Casera",
       stars: 5
     },
     {
-      text: "El equipo entendió exactamente qué hace especial a nuestro café mexicano y creó una marca que cuenta nuestra historia auténtica. Las ventas han aumentado un 45% desde el rebranding.",
-      author: "Carlos Rodríguez",
-      role: "Co-fundador, Chiapas Beans",
+      text: "La marca de Culto al Perro Café no nació por accidente. Fue un proceso de introspección, de entender qué nos hace únicos y cómo queríamos conectar con la gente. Gracias al equipo de branding, logramos plasmar en cada elemento —del logo al empaque— nuestra personalidad: cercana, divertida, pero con carácter. Hoy nuestra comunidad reconoce a Culto al Perro como algo más que una cafetería; es un espacio con identidad propia. Y todo comenzó cuando decidimos tomarnos en serio nuestra historia.",
+      author: "Marco Madrid",
+      role: "Co-Fundador, Culto al Perro Café",
       stars: 5
     },
     {
-      text: "Estábamos luchando por diferenciar nuestro café en un mercado saturado. El paquete de branding que recibimos nos ayudó a destacar y conectar con clientes que aprecian la calidad.",
-      author: "Luisa Méndez",
-      role: "Directora de Marketing, Organic Oaxaca",
+      text: "El café nos trajo a muchos clientes por primera vez, pero fue hasta que tuvimos una marca propia que todo cambió. El equipo entendió el corazón de nuestro restaurante: comida hecha con cariño, sin pretensiones, y lo convirtió en una identidad visual y narrativa que conecta con la gente. Desde el rebranding, no solo nos visitan más, también nos recuerdan. Ahora somos un lugar con alma y con nombre.",
+      author: "Lucille Aguilar",
+      role: "Fundadora y Dueña, Santo Alimento",
       stars: 5
     }
   ];
