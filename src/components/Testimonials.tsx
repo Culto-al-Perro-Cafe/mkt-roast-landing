@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      text: "Gato Gordo siempre tuvo buena comida y clientela fiel, pero visualmente no se sentía como una marca. Con la ayuda de Culto Roasters, transformamos nuestra identidad: desde los menús y señalética hasta cómo nos comunicamos en redes. Ahora la gente no solo viene a comer, viene porque se siente parte de algo especial. La diferencia es brutal: pasamos de ser 'una fondita buena' a ser un lugar con carácter, con historia y con estilo propio.",
+      text: "Antes, el café era nuestra parte más floja—muchos lo dejaban a la mitad. Pero desde que empezamos a trabajar con Culto Roasters, todo cambió. Ahora nuestros clientes piden otra taza, lo recomiendan y hasta preguntan por el origen. El café se volvió parte esencial de la experiencia en Gato Gordo. Ya no solo vienen a comer bien, vienen a disfrutar un café con historia y sabor real.",
       author: "Vicente Castro",
       role: "Dueño, Gato Gordo Comida Casera",
       stars: 5
